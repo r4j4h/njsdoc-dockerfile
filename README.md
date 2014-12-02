@@ -29,8 +29,10 @@ This image is designed so that this code to document is mounted as a volume into
 
 1. [Install Docker](https://docs.docker.com/installation/#installation)
 2. Download this image
-3. Build this image
-  - `docker build -t="njsdoc:0.0.7"`
+  - `docker pull r4j4h/njsdoc-dockerfile`
+  - Or to manually build this image:
+      - Download [https://github.com/r4j4h/njsdoc-dockerfile](https://github.com/r4j4h/njsdoc-dockerfile)
+      - `docker build -t="njsdoc:0.0.7" .`
 3. Run a container from this image with your code:
   - Assuming a folder /path-to-your-code/ exists with a my-source.js file...
   - `docker run --rm -v /path-to-your-code:/code_in njsdoc:0.0.7 /code_in/my-source.js --markdown`
