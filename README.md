@@ -7,7 +7,7 @@ A handy dockerfile for running njsdoc to document some code. Use it as-is or ext
 What is `njsdoc`?
 -------------
 
-[njsdoc](https://bitbucket.org/nexj/njsdoc/src) is a JavaScript code document generator. All document generators read the code and do some analysis. Most read
+[njsdoc](https://bitbucket.org/nexj/njsdoc) is a JavaScript code document generator. All document generators read the code and do some analysis. Most read
 the code directly as it is stored at rest in the file system, a job commonly referred to as static analysis. njsdoc
 executes the code in a modified Rhino environment and analyzes it at runtime. This allows a lot of JavaScript's
 run-time beauty to shine through, without needing to code a certain way or annotation with arcane syntax in weird ways.
