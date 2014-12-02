@@ -42,7 +42,7 @@ This image is designed so that this code to document is mounted as a volume into
   - njsdoc by default returns the output via stdout.
   - njsdoc provides output control options - in this case we still want docker to clean up the container, but we want
   to keep the output.
-        - `docker run --rm -e CODE_PATH=/code_in -e DOC_PATH=/docs -v ./path-to-your-code:/code_in -v /desired-path-to-your-docs:/docs <image> r4j4h/njsdoc:0.0.7 /code_in/my-source.js --markdown --out /docs/my-source.md`
+        - `docker run --rm -v ./path-to-your-code:/code_in -v /desired-path-to-your-docs:/docs <image> r4j4h/njsdoc:0.0.7 /code_in/my-source.js --markdown --out /docs/my-source.md`
         - This is the same command as before, modified slightly:
           - We link another local volume, which should be pointed to where you want your generated code to go.
           - We have added `--out /docs` to inform jsdoc to not push out to stdout but to write to our destined file system
