@@ -4,19 +4,19 @@ njsdoc Dockerfile
 A handy dockerfile for running njsdoc to document some code. Use it as-is or extend it via FROM and do something else.
 
 
-What is njsdoc?
+What is `njsdoc`?
 -------------
 
-`[njsdoc](https://bitbucket.org/nexj/njsdoc/src)` is a JavaScript code document generator. All document generators read the code and do some analysis. Most read
+[njsdoc](https://bitbucket.org/nexj/njsdoc/src) is a JavaScript code document generator. All document generators read the code and do some analysis. Most read
 the code directly as it is stored at rest in the file system, a job commonly referred to as static analysis. njsdoc
 executes the code in a modified Rhino environment and analyzes it at runtime. This allows a lot of JavaScript's
 run-time beauty to shine through, without needing to code a certain way or annotation with arcane syntax in weird ways.
 
 
-What is Docker?
+What is `Docker`?
 -------------
 
-`[Docker](https://www.docker.com/)` is an open platform for developers and sysadmins to build, ship, and run distributed applications.
+[Docker](https://www.docker.com/) is an open platform for developers and sysadmins to build, ship, and run distributed applications.
 It is used here to wrap njsdoc itself and it's dependencies - namely Java - into a single container that can be used as
 an application with the only dynamic dependency being the code to document.
 
