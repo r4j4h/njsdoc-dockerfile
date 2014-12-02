@@ -29,7 +29,7 @@ This image is designed so that this code to document is mounted as a volume into
 
 1. [Install Docker](https://docs.docker.com/installation/#installation)
 2. Download this image
-  - `docker pull r4j4h/njsdoc-dockerfile`
+  - `docker pull r4j4h/njsdoc`
   - Or to manually build this image:
       - Download [https://github.com/r4j4h/njsdoc-dockerfile](https://github.com/r4j4h/njsdoc-dockerfile)
       - `docker build -t="njsdoc:0.0.7" .`
